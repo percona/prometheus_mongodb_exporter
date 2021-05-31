@@ -305,6 +305,8 @@ github.com/pelletier/go-toml v1.4.0/go.mod h1:PN7xzY2wHTK0K9p34ErDQMlFxa51Fk0OUr
 github.com/pelletier/go-toml v1.7.0/go.mod h1:vwGMzjaWMwyfHwgIBhI2YUM4fB6nL6lVAvS1LBMMhTE=
 github.com/percona/exporter_shared v0.7.2 h1:8eNBht83bgFagdiIm3b4HbsOFc5du6OUBCUVenTumdw=
 github.com/percona/exporter_shared v0.7.2/go.mod h1:AWk9lgTPzI7tC5PzpeBGvhhqjSJNxpPNFaF7qLIJqmo=
+github.com/percona/exporter_shared v0.7.3-0.20210528172941-f7ec90e20757 h1:q4OqJ4HPNdSTZVvcHxQMY0xsKu3y6m2Sk8YMdi99/Rs=
+github.com/percona/exporter_shared v0.7.3-0.20210528172941-f7ec90e20757/go.mod h1:AWk9lgTPzI7tC5PzpeBGvhhqjSJNxpPNFaF7qLIJqmo=
 github.com/percona/go-mysql v0.0.0-20190903141930-197f4ad8db8d/go.mod h1:/SGLf9OMxlnK6jq4mkFiImBcJXXk5jwD+lDrwDaGXcw=
 github.com/percona/percona-toolkit v0.0.0-20210504134948-4dd72d96b10d h1:RCnD2c2+ur6z0Lee/VLEXuGT1TKvZs/i3nYrWZ4WrT0=
 github.com/percona/percona-toolkit v0.0.0-20210504134948-4dd72d96b10d/go.mod h1:uGrhLglXccEIplDyzQSJfv3UWG5J7ACFjaZebntKStQ=
