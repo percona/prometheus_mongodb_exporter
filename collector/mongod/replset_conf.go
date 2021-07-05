@@ -60,15 +60,15 @@ type ReplSetConf struct {
 
 // MemberConf represents an array element of ReplSetConf.Members
 type MemberConf struct {
-	ID           int32  `bson:"_id"`
-	Host         string `bson:"host"`
-	ArbiterOnly  bool   `bson:"arbiterOnly"`
-	BuildIndexes bool   `bson:"buildIndexes"`
-	Hidden       bool   `bson:"hidden"`
-	Priority     int32  `bson:"priority"`
+	ID           int32   `bson:"_id"`
+	Host         string  `bson:"host"`
+	ArbiterOnly  bool    `bson:"arbiterOnly"`
+	BuildIndexes bool    `bson:"buildIndexes"`
+	Hidden       bool    `bson:"hidden"`
+	Priority     float64 `bson:"priority"`
 
 	Tags       map[string]string `bson:"tags"`
-	SlaveDelay float64           `bson:"saveDelay"`
+	SlaveDelay float64           `bson:"slaveDelay"`
 	Votes      int32             `bson:"votes"`
 }
 
