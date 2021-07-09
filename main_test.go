@@ -18,6 +18,7 @@ func TestBuildExporter(t *testing.T) {
 
 		DisableDiagnosticData:   true,
 		DisableReplicasetStatus: true,
+		DisableReplicasetConfig: true,
 
 		CompatibleMode: true,
 	}

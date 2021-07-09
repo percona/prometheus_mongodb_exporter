@@ -54,6 +54,7 @@ type Opts struct {
 	Logger                  *logrus.Logger
 	DisableDiagnosticData   bool
 	DisableReplicasetStatus bool
+	DisableReplicasetConfig bool
 }
 
 var (
@@ -157,6 +158,17 @@ func (e *Exporter) makeRegistry(ctx context.Context, client *mongo.Client, topol
 			topologyInfo:   topologyInfo,
 		}
 		registry.MustRegister(&rsgsc)
+	}
+
+	if !e.opts.DisableReplicasetConfig {
+		rsgcc := replSetGetConfigCollector{
+			ctx:            ctx,
+			client:         client,
+			compatibleMode: e.opts.CompatibleMode,
+			logger:         e.opts.Logger,
+			topologyInfo:   topologyInfo,
+		}
+		registry.MustRegister(&rsgcc)
 	}
 
 	return registry

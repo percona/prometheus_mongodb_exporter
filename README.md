@@ -40,6 +40,7 @@ Currently, these metric sources are implemented:
 |\-\-log.level|Only log messages with the given severity or above. Valid levels: [debug, info, warn, error]|\-\-log.level="error"|
 |\-\-disable.diagnosticdata|Disable collecting metrics from getDiagnosticData||
 |\-\-disable.replicasetstatus|Disable collecting metrics from replSetGetStatus||
+|\-\-disable.replicasetconfig|Disable collecting metrics from replSetGetConfig||
 |--version|Show version and exit|
 
  ### Build the exporter
